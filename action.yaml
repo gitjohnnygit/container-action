@@ -4,12 +4,11 @@ author: "Shih-Chang"
 inputs:
   myInput:
     description: "Greeting to"
-    id: hello
     required: true
     default: "Guru"
 outputs:
   myOutput:
-    description: "Total memory successfully output"
+    description: "Total memory"
 runs:
-  uses: "docker"
-  images: "Dockerfile"
+  using: "docker"
+  image: "Dockerfile"
