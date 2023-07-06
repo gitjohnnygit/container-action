@@ -1,0 +1,15 @@
+name: "container action"
+description: "Hands on lab"
+author: "Shih-Chang"
+inputs:
+  myInput:
+    description: "Greeting to"
+    id: hello
+    required: true
+    default: "Guru"
+outputs:
+  myOutput:
+    description: "Total memory successfully output"
+runs:
+  uses: "docker"
+  images: "Dockerfile"
